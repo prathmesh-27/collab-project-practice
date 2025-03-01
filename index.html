@@ -1,11 +1,280 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Git</title>
-</head>
-<body>
-    Helloooo!!!!!!!!!!!!!!!!!!!!!!!!!!!
-</body>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Spotify Clone
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-900 text-white">
+  <!-- Navbar -->
+  <nav class="bg-gray-800 p-4">
+   <div class="container mx-auto flex justify-between items-center">
+    <div class="flex items-center">
+     <img alt="Spotify logo placeholder" class="h-10 w-10" height="50" src="https://storage.googleapis.com/a1aa/image/geBfyBnbqLR8VuN_VjMOP435LsTBwFgI9P0WRzhCo0M.jpg" width="50"/>
+     <span class="ml-3 text-xl font-bold">
+      Spotify
+     </span>
+    </div>
+    <ul class="flex space-x-4">
+     <li>
+      <a class="hover:text-green-500" href="#">
+       Home
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-green-500" href="#">
+       Search
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-green-500" href="#">
+       Your Library
+      </a>
+     </li>
+    </ul>
+    <div class="flex items-center space-x-4">
+     <a class="hover:text-green-500" href="#">
+      <i class="fas fa-user">
+      </i>
+     </a>
+     <a class="hover:text-green-500" href="#">
+      <i class="fas fa-cog">
+      </i>
+     </a>
+    </div>
+   </div>
+  </nav>
+  <!-- Main Content -->
+  <div class="container mx-auto mt-8">
+   <!-- Hero Section -->
+   <div class="flex flex-col md:flex-row items-center bg-gray-800 p-6 rounded-lg">
+    <img alt="Hero section image placeholder" class="w-full md:w-1/2 rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/dBRyIle-cR1UCOHwRwU0JEf08JZWiHyCzhJaSVrx_20.jpg" width="300"/>
+    <div class="md:ml-6 mt-4 md:mt-0">
+     <h1 class="text-3xl font-bold">
+      Discover New Music
+     </h1>
+     <p class="mt-2 text-gray-400">
+      Explore millions of songs and podcasts. Listen to your favorite artists and discover new ones.
+     </p>
+     <button class="mt-4 bg-green-500 text-white px-4 py-2 rounded-lg">
+      Get Started
+     </button>
+    </div>
+   </div>
+   <!-- Featured Playlists -->
+   <div class="mt-8">
+    <h2 class="text-2xl font-bold">
+     Featured Playlists
+    </h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
+     <div class="bg-gray-800 p-4 rounded-lg">
+      <img alt="Playlist cover image placeholder" class="w-full rounded-lg" height="200" src="https://storage.googleapis.com/a1aa/image/4nbmvZ_50CNXQaB2KlBtGuiWz1s64k6tM9Z6vQ3GSnU.jpg" width="200"/>
+      <h3 class="mt-2 font-bold">
+       Top Hits
+      </h3>
+      <p class="text-gray-400">
+       The hottest tracks right now.
+      </p>
+     </div>
+     <div class="bg-gray-800 p-4 rounded-lg">
+      <img alt="Playlist cover image placeholder" class="w-full rounded-lg" height="200" src="https://storage.googleapis.com/a1aa/image/4nbmvZ_50CNXQaB2KlBtGuiWz1s64k6tM9Z6vQ3GSnU.jpg" width="200"/>
+      <h3 class="mt-2 font-bold">
+       Chill Vibes
+      </h3>
+      <p class="text-gray-400">
+       Relax and unwind with these chill tunes.
+      </p>
+     </div>
+     <div class="bg-gray-800 p-4 rounded-lg">
+      <img alt="Playlist cover image placeholder" class="w-full rounded-lg" height="200" src="https://storage.googleapis.com/a1aa/image/4nbmvZ_50CNXQaB2KlBtGuiWz1s64k6tM9Z6vQ3GSnU.jpg" width="200"/>
+      <h3 class="mt-2 font-bold">
+       Workout Mix
+      </h3>
+      <p class="text-gray-400">
+       Get pumped with this high-energy playlist.
+      </p>
+     </div>
+     <div class="bg-gray-800 p-4 rounded-lg">
+      <img alt="Playlist cover image placeholder" class="w-full rounded-lg" height="200" src="https://storage.googleapis.com/a1aa/image/4nbmvZ_50CNXQaB2KlBtGuiWz1s64k6tM9Z6vQ3GSnU.jpg" width="200"/>
+      <h3 class="mt-2 font-bold">
+       Throwback
+      </h3>
+      <p class="text-gray-400">
+       Classic hits from the past.
+      </p>
+     </div>
+    </div>
+   </div>
+   <!-- New Releases -->
+   <div class="mt-8">
+    <h2 class="text-2xl font-bold">
+     New Releases
+    </h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
+     <div class="bg-gray-800 p-4 rounded-lg">
+      <img alt="Album cover image placeholder" class="w-full rounded-lg" height="200" src="https://storage.googleapis.com/a1aa/image/IgIlfT5dS1wCQ_rlOvoZ1vSTf8XDSTINfy98RAbdRng.jpg" width="200"/>
+      <h3 class="mt-2 font-bold">
+       Album Title 1
+      </h3>
+      <p class="text-gray-400">
+       Artist Name
+      </p>
+     </div>
+     <div class="bg-gray-800 p-4 rounded-lg">
+      <img alt="Album cover image placeholder" class="w-full rounded-lg" height="200" src="https://storage.googleapis.com/a1aa/image/IgIlfT5dS1wCQ_rlOvoZ1vSTf8XDSTINfy98RAbdRng.jpg" width="200"/>
+      <h3 class="mt-2 font-bold">
+       Album Title 2
+      </h3>
+      <p class="text-gray-400">
+       Artist Name
+      </p>
+     </div>
+     <div class="bg-gray-800 p-4 rounded-lg">
+      <img alt="Album cover image placeholder" class="w-full rounded-lg" height="200" src="https://storage.googleapis.com/a1aa/image/IgIlfT5dS1wCQ_rlOvoZ1vSTf8XDSTINfy98RAbdRng.jpg" width="200"/>
+      <h3 class="mt-2 font-bold">
+       Album Title 3
+      </h3>
+      <p class="text-gray-400">
+       Artist Name
+      </p>
+     </div>
+     <div class="bg-gray-800 p-4 rounded-lg">
+      <img alt="Album cover image placeholder" class="w-full rounded-lg" height="200" src="https://storage.googleapis.com/a1aa/image/IgIlfT5dS1wCQ_rlOvoZ1vSTf8XDSTINfy98RAbdRng.jpg" width="200"/>
+      <h3 class="mt-2 font-bold">
+       Album Title 4
+      </h3>
+      <p class="text-gray-400">
+       Artist Name
+      </p>
+     </div>
+    </div>
+   </div>
+   <!-- Songs Section -->
+   <div class="mt-8">
+    <h2 class="text-2xl font-bold">
+     Popular Songs
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+     <div class="bg-gray-800 p-4 rounded-lg flex items-center">
+      <img alt="Song cover image placeholder" class="w-16 h-16 rounded-lg" height="64" src="https://storage.googleapis.com/a1aa/image/IgIlfT5dS1wCQ_rlOvoZ1vSTf8XDSTINfy98RAbdRng.jpg" width="64"/>
+      <div class="ml-4">
+       <h3 class="font-bold">
+        Song Title 1
+       </h3>
+       <p class="text-gray-400">
+        Artist Name
+       </p>
+      </div>
+     </div>
+     <div class="bg-gray-800 p-4 rounded-lg flex items-center">
+      <img alt="Song cover image placeholder" class="w-16 h-16 rounded-lg" height="64" src="https://storage.googleapis.com/a1aa/image/IgIlfT5dS1wCQ_rlOvoZ1vSTf8XDSTINfy98RAbdRng.jpg" width="64"/>
+      <div class="ml-4">
+       <h3 class="font-bold">
+        Song Title 2
+       </h3>
+       <p class="text-gray-400">
+        Artist Name
+       </p>
+      </div>
+     </div>
+     <div class="bg-gray-800 p-4 rounded-lg flex items-center">
+      <img alt="Song cover image placeholder" class="w-16 h-16 rounded-lg" height="64" src="https://storage.googleapis.com/a1aa/image/IgIlfT5dS1wCQ_rlOvoZ1vSTf8XDSTINfy98RAbdRng.jpg" width="64"/>
+      <div class="ml-4">
+       <h3 class="font-bold">
+        Song Title 3
+       </h3>
+       <p class="text-gray-400">
+        Artist Name
+       </p>
+      </div>
+     </div>
+     <div class="bg-gray-800 p-4 rounded-lg flex items-center">
+      <img alt="Song cover image placeholder" class="w-16 h-16 rounded-lg" height="64" src="https://storage.googleapis.com/a1aa/image/IgIlfT5dS1wCQ_rlOvoZ1vSTf8XDSTINfy98RAbdRng.jpg" width="64"/>
+      <div class="ml-4">
+       <h3 class="font-bold">
+        Song Title 4
+       </h3>
+       <p class="text-gray-400">
+        Artist Name
+       </p>
+      </div>
+     </div>
+     <div class="bg-gray-800 p-4 rounded-lg flex items-center">
+      <img alt="Song cover image placeholder" class="w-16 h-16 rounded-lg" height="64" src="https://storage.googleapis.com/a1aa/image/IgIlfT5dS1wCQ_rlOvoZ1vSTf8XDSTINfy98RAbdRng.jpg" width="64"/>
+      <div class="ml-4">
+       <h3 class="font-bold">
+        Song Title 5
+       </h3>
+       <p class="text-gray-400">
+        Artist Name
+       </p>
+      </div>
+     </div>
+     <div class="bg-gray-800 p-4 rounded-lg flex items-center">
+      <img alt="Song cover image placeholder" class="w-16 h-16 rounded-lg" height="64" src="https://storage.googleapis.com/a1aa/image/IgIlfT5dS1wCQ_rlOvoZ1vSTf8XDSTINfy98RAbdRng.jpg" width="64"/>
+      <div class="ml-4">
+       <h3 class="font-bold">
+        Song Title 6
+       </h3>
+       <p class="text-gray-400">
+        Artist Name
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- Footer -->
+  <footer class="bg-gray-800 mt-8 p-4">
+   <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+    <div class="flex items-center">
+     <img alt="Spotify logo placeholder" class="h-10 w-10" height="50" src="https://storage.googleapis.com/a1aa/image/geBfyBnbqLR8VuN_VjMOP435LsTBwFgI9P0WRzhCo0M.jpg" width="50"/>
+     <span class="ml-3 text-xl font-bold">
+      Spotify
+     </span>
+    </div>
+    <ul class="flex space-x-4 mt-4 md:mt-0">
+     <li>
+      <a class="hover:text-green-500" href="#">
+       About
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-green-500" href="#">
+       Jobs
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-green-500" href="#">
+       For the Record
+      </a>
+     </li>
+    </ul>
+    <div class="flex items-center space-x-4 mt-4 md:mt-0">
+     <a class="hover:text-green-500" href="#">
+      <i class="fab fa-facebook">
+      </i>
+     </a>
+     <a class="hover:text-green-500" href="#">
+      <i class="fab fa-twitter">
+      </i>
+     </a>
+     <a class="hover:text-green-500" href="#">
+      <i class="fab fa-instagram">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+ </body>
 </html>
